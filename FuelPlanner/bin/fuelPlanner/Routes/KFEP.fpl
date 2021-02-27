@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flight-plan xmlns="http://www8.garmin.com/xmlschemas/FlightPlan/v1">
+  <created>2020-08-18T00:04:18Z</created>
+  <waypoint-table>
+    <waypoint>
+      <identifier>KORD</identifier>
+      <type>AIRPORT</type>
+      <country-code>K5</country-code>
+      <lat>41.974522</lat>
+      <lon>-87.906597</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV001</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>41.948460</lat>
+      <lon>-88.024933</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV002</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>42.040998</lat>
+      <lon>-88.083527</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV003</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>41.964800</lat>
+      <lon>-88.186066</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV004</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>42.062072</lat>
+      <lon>-88.269379</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>KFEP</identifier>
+      <type>AIRPORT</type>
+      <country-code>K5</country-code>
+      <lat>42.246114</lat>
+      <lon>-89.581978</lon>
+      <comment />
+    </waypoint>
+  </waypoint-table>
+  <route>
+    <route-name>KORD KFEP</route-name>
+    <flight-plan-index>1</flight-plan-index>
+    <route-point>
+      <waypoint-identifier>KORD</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K5</waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV001</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV002</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV003</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV004</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>KFEP</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K5</waypoint-country-code>
+    </route-point>
+  </route>
+</flight-plan>

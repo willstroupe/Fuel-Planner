@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flight-plan xmlns="http://www8.garmin.com/xmlschemas/FlightPlan/v1">
+  <created>2020-08-11T19:18:12Z</created>
+  <waypoint-table>
+    <waypoint>
+      <identifier>S50</identifier>
+      <type>AIRPORT</type>
+      <country-code>K1</country-code>
+      <lat>47.327694</lat>
+      <lon>-122.226667</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV001</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.398210</lat>
+      <lon>-122.238281</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV002</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.357758</lat>
+      <lon>-122.344025</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV003</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.441882</lat>
+      <lon>-122.370117</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV004</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.915238</lat>
+      <lon>-123.281067</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV005</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.979014</lat>
+      <lon>-121.865662</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV006</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>48.390428</lat>
+      <lon>-122.991760</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV007</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>48.572488</lat>
+      <lon>-122.186096</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>KBLI</identifier>
+      <type>AIRPORT</type>
+      <country-code>K1</country-code>
+      <lat>48.792694</lat>
+      <lon>-122.537528</lon>
+      <comment />
+    </waypoint>
+  </waypoint-table>
+  <route>
+    <route-name>S50 KBLI</route-name>
+    <flight-plan-index>1</flight-plan-index>
+    <route-point>
+      <waypoint-identifier>S50</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K1</waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV001</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV002</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV003</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV004</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV005</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV006</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV007</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>KBLI</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K1</waypoint-country-code>
+    </route-point>
+  </route>
+</flight-plan>

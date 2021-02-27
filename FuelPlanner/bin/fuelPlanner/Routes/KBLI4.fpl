@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flight-plan xmlns="http://www8.garmin.com/xmlschemas/FlightPlan/v1">
+  <created>2020-08-17T23:42:03Z</created>
+  <waypoint-table>
+    <waypoint>
+      <identifier>KBFI</identifier>
+      <type>AIRPORT</type>
+      <country-code>K1</country-code>
+      <lat>47.529972</lat>
+      <lon>-122.301944</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV001</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.586160</lat>
+      <lon>-122.408752</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV002</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.630601</lat>
+      <lon>-122.319031</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV003</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.715059</lat>
+      <lon>-122.450867</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>SV004</identifier>
+      <type>USER WAYPOINT</type>
+      <country-code />
+      <lat>47.760622</lat>
+      <lon>-122.361145</lon>
+      <comment />
+    </waypoint>
+    <waypoint>
+      <identifier>KBLI</identifier>
+      <type>AIRPORT</type>
+      <country-code>K1</country-code>
+      <lat>48.792694</lat>
+      <lon>-122.537528</lon>
+      <comment />
+    </waypoint>
+  </waypoint-table>
+  <route>
+    <route-name>KBFI KBLI</route-name>
+    <flight-plan-index>1</flight-plan-index>
+    <route-point>
+      <waypoint-identifier>KBFI</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K1</waypoint-country-code>
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV001</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV002</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV003</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>SV004</waypoint-identifier>
+      <waypoint-type>USER WAYPOINT</waypoint-type>
+      <waypoint-country-code />
+    </route-point>
+    <route-point>
+      <waypoint-identifier>KBLI</waypoint-identifier>
+      <waypoint-type>AIRPORT</waypoint-type>
+      <waypoint-country-code>K1</waypoint-country-code>
+    </route-point>
+  </route>
+</flight-plan>
