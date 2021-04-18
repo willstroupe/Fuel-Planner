@@ -103,13 +103,16 @@ public class MainWindow extends Application {
 					}
 					primaryStage.close();
 					try {
-						WaypointDataWindow.display(FPL_PATH+fpl, PLANEID_PATH+planeID, flightDate);
+						WaypointDataWindow.display(FPL_PATH+fpl, 
+												   PLANEID_PATH+planeID, 
+												   flightDate);
 					} catch (FileNotFoundException e) {
 						e.printStackTrace();
 					}
 				}
 			});
-			mainLayout.getChildren().addAll(fplLabel, fplSel, planeLabel, planeIDSel, dateLabel, dateBox);
+			mainLayout.getChildren().addAll(fplLabel, fplSel, planeLabel, 
+					                        planeIDSel, dateLabel, dateBox);
 			root.setCenter(mainLayout);
 			BorderPane.setAlignment(nextButton, Pos.BOTTOM_RIGHT);
 			root.setBottom(nextButton);

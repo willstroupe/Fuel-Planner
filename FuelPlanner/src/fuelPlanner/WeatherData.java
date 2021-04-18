@@ -29,9 +29,8 @@ public class WeatherData {
 	// given a flight time, find the .grib2 file which provides data closest to that
 	// time, in {year, month, day, hour}
 	private void getFilePath(LocalDateTime flightDate) {
-		// get flight time from input, local time minus 3 hours to account for forecast
-		// release lag
-		LocalDateTime dtTm = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC).minusHours(4);
+		LocalDateTime dtTm = LocalDateTime.ofInstant(Instant.now(), 
+				ZoneOffset.UTC).minusHours(4);
 		// round our hours down to the nearest multiple of six
 		dtTm = dtTm.minusHours(dtTm.getHour() % 6);
 		long fVal = dtTm.until(flightDate, ChronoUnit.HOURS);
@@ -41,14 +40,15 @@ public class WeatherData {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd/HH");
 		String dtStr = dtTm.format(formatter);
 		String hrStr = String.format("%02d", dtTm.getHour());
-		StringBuilder path = new StringBuilder("https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.");
+		StringBuilder path = new StringBuilder(
+				"https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.");
 		path.append(dtStr);
-		path.append("/gfs.t");
+		path.append("/atmos/gfs.t");
 		path.append(hrStr);
 		path.append("z.pgrb2.1p00.f");
 		path.append(fStr);
 		this.grib2Path = path.toString();
-		System.out.println(this.grib2Path);
+		System.out.println(grib2Path);
 	}
 
 	// take file from getFilePath, download HGT data, and find lowest pres alt+its
@@ -96,7 +96,8 @@ public class WeatherData {
 
 		// use get_grib.exe to download a truncated grib2 file and write to
 		// gribHGT.grib2 for parsing
-		ProcessBuilder pb2 = new ProcessBuilder(getGribPath + "get_grib.exe", grib2Path, dataPath + "gribHGT.grib2");
+		ProcessBuilder pb2 = new ProcessBuilder(getGribPath + "get_grib.exe", 
+				grib2Path, dataPath + "gribHGT.grib2");
 		pb2.redirectInput(hgtInv);
 		pb2.redirectError(new File(dataPath + "getGribOut.txt"));
 		Process process2 = pb2.start();

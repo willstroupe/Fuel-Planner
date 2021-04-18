@@ -83,7 +83,7 @@ public class RouteLeg {
 	}
 	
 	//sets legTime, legFuel, time in hours
-	public void cruiseStats(Airplane airplane) throws IOException {
+	public void setCruiseStats(Airplane airplane) throws IOException {
 		double[] planeInfo = airplane.cruiseInterpolate(alt, wxData[3], RPM);
 		double groundSpeed = this.groundSpeed(planeInfo[0]);
 		double time = cruiseDist/groundSpeed;
@@ -125,7 +125,7 @@ public class RouteLeg {
 		double[] clmbVals = climbStats(airplane, endAlt);
 		cruiseDist = dist - clmbVals[2];
 		alt = endAlt;
-		this.cruiseStats(airplane);
+		this.setCruiseStats(airplane);
 		legTime += clmbVals[0];
 		legFuel += clmbVals[1];
 	}
@@ -142,7 +142,7 @@ public class RouteLeg {
 	public void descLegCalc(Airplane airplane, int endAlt) throws IOException {
 		double descVals[] = descStats(airplane, endAlt);
 		cruiseDist = dist - descVals[2];
-		this.cruiseStats(airplane);
+		this.setCruiseStats(airplane);
 		legTime += descVals[0];
 		legFuel += descVals[1];
 		
@@ -186,6 +186,4 @@ public class RouteLeg {
 		int alt = (int)(descStats[1]*descTime*60); //mult. by 60 to convert to minutes and FPM
 		return alt;
 	}
-	
-	//returns the altitude + RPM where fuel burn is optimized for given tas+temp
 }
